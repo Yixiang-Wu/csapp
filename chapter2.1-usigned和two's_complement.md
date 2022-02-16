@@ -67,6 +67,7 @@
     - 补码，若为正数，自然补0
     - 补码，若为负数，补1，简单证明（举个例子就OK了）
     - 值得一提的是，当short转换为unsigned（int）时，是先符号扩展，再转为无符号数
+    - <font color=#00ff>也就是按照原类型变长</font>
 23. 截断
     - int 转换为short，unsigned short等
 

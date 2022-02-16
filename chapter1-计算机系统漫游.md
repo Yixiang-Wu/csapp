@@ -3,7 +3,7 @@
     - 只由ASCII码字符构成的文件称为文本文件（text），其他的文件称为二进制文件
     - 对于一串同样的bit流，区分他们的方式是（context），也就是用什么样的规则去解释(interpretation)
 2. 翻译过程
-    1. pre-process(cpp)将include的内容插入到hello.c，得到hello.i
+    1. pre-process(cpp)将include的内容插入到hello.c，处理宏，得到hello.i
     2. compiler(cc1)将hello.i变成汇编文件hello.s，注意这里每一条汇编语句都对应着一条低级的机器语言指令
     3. assembler(as)将hello.s翻译成机器语言指令，并打包成可重定位目标程序（relocatable object program）的格式，得到hello.o（binary file).
     4. linker(ld)。比如hello.c使用了printf函数，那么就要合并printf.o和hello.o，得到hello(binary file)。
