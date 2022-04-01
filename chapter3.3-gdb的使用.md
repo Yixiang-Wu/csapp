@@ -8,7 +8,7 @@
 6. 糖 //回车，表示和上次一样
 7. k // kill debug
 8. info b 看断点
-
+------
 
 调试汇编
 1. disassemble phase_1
@@ -17,3 +17,7 @@
 4. print (char) *0x402400
 5. stepi
 6. nexti
+
+------
+csapp计划
+1. 汇编有一些没看，先跳过了
