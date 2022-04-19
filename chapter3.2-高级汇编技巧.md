@@ -4,9 +4,9 @@
 if(!test-expr)
   goto L2
  L1:
- balabala
- ret
+   balabala
+   ret
  L2:
- balabala
- ret
+   balabala
+   ret
 ```
