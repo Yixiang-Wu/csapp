@@ -1,4 +1,4 @@
-### 条件分支
+# 条件分支
 1. 条件控制实现
 ``` c
 if(!test-expr)
@@ -65,7 +65,7 @@ done:
 for(init-expr; test-expr; update-expr)
   body-statement
 ```
-- 等价while(一种例外，continue)
+- 等价while(一种例外，continue)，当出现continue时，while直接jump到末尾，而for要jump到update
 ``` c
 init-expr;
 while(test-expr){
