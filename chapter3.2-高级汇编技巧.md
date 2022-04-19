@@ -54,3 +54,22 @@ loop:
 done:
   ret
 ```
+3. 比较
+  1. 第二种方法，对处理器友好，效率较高
+  2. 一般 -O1 就是第二种方法
+------
+### for
+```c
+for(init-expr; test-expr; update-expr)
+  body-statement
+```
+- 等价while(一种例外，continue)
+``` c
+init-expr;
+while(test-expr){
+  body-statement;
+  update-expr;
+}
+```
+- 翻译为jump to middle和 guarded do时，参考while
+------
