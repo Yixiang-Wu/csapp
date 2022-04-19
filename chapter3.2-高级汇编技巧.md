@@ -32,6 +32,7 @@ loop:
 
 2. while
 ```c
+// 第一种方法：jump to middle
 // 相比do-while，多了第一个goto
 goto test
 loop:
@@ -39,4 +40,21 @@ loop:
 test:
   t = test-expr;
   if(t) goto-loop;
+  
+// 第二种方法：guarded do
+t = test-expr
+if(!t) goto done
+do
+  body-statement
+  while(test-expr)
+done:
+ 
+ 或者
+ t = test-expr
+ if(!t) goto done
+ loop:
+   body-statement
+   t = test-expr
+   if(t) goto loop
+ done:
 ```
