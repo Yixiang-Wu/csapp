@@ -75,3 +75,5 @@ while(test-expr){
 ```
 - 翻译为jump to middle和 guarded do时，参考while
 ------
+# switch
+跳转表，效率比if高，数组（以后说）
