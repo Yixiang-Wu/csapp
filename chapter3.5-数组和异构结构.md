@@ -27,7 +27,7 @@ struct node_t{
     union{
         struct{
             struct node_t * left;
-            struct node_t * left;
+            struct node_t * right;
         } internal;
         double data[2];
     } info;
